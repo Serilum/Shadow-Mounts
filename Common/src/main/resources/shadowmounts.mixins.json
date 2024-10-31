@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.natamus.shadowmounts.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+	"AbstractHorseAccessor",
+	"AbstractHorseMixin",
+	"HorseInventoryMenuSlotMixin"
+  ],
+  "client": [
+	"LivingEntityRendererMixin",
+	"HorseMarkingLayerMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}
