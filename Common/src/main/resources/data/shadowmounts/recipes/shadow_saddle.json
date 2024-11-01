@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BGB",
+		"BSB",
+		"BCB"
+	],
+	"key": {
+		"B": {
+			"item": "minecraft:blackstone"
+		},
+		"G": {
+			"item": "minecraft:gilded_blackstone"
+		},
+		"S": {
+			"item": "minecraft:saddle"
+		},
+		"C": {
+			"item": "minecraft:soul_campfire"
+		}
+	},
+	"result": {
+		"item": "shadowmounts:shadow_saddle",
+		"count": 1
+	}
+}
