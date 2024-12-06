@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "shadowmounts",
-  "version": "1.1",
+  "version": "1.2",
 
   "name": "Shadow Mounts",
   "description": "SpookyJam 2024: Turn horses into their Shadow Variant via a unique saddle!",
@@ -48,7 +48,6 @@
 	  " Andrean Olgo",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " LyraKeaton",
 	  " Michael W. S.",
 	  " Tyler Behl",
 	  " XAgent"
