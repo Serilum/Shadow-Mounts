@@ -3,7 +3,7 @@ package com.natamus.shadowmounts.util;
 import com.natamus.shadowmounts.data.ShadowItems;
 import net.minecraft.client.renderer.entity.state.HorseRenderState;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.animal.equine.AbstractHorse;
 import net.minecraft.world.item.equipment.EquipmentAssets;
@@ -37,7 +37,7 @@ public class Util {
 		return Equippable.builder(EquipmentSlot.SADDLE)
 		    .setEquipSound(SoundEvents.HORSE_SADDLE)
 		    .setAsset(EquipmentAssets.SADDLE)
-		    .setAllowedEntities(EntityType.HORSE, EntityType.SKELETON_HORSE, EntityType.ZOMBIE_HORSE)
+		    .setAllowedEntities(EntityTypes.HORSE, EntityTypes.SKELETON_HORSE, EntityTypes.ZOMBIE_HORSE)
 		    .setEquipOnInteract(true)
 		    .setCanBeSheared(true)
 		    .setShearingSound(SoundEvents.SADDLE_UNEQUIP)
