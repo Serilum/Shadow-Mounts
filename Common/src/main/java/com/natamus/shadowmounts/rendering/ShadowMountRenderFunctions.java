@@ -24,19 +24,19 @@ public class ShadowMountRenderFunctions {
 	@SuppressWarnings({"unchecked", "rawtypes"})
     public static void renderDarkerToBuffer(EntityModel<?> entityModel, HorseRenderState horseRenderState, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, RenderType renderType, int packedLight, int overlayCoords) {
 		if (ConfigHandler.darkenHorseTexture) {
-			submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight / 5, overlayCoords, -1, null, horseRenderState.outlineColor, null);
+			submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight / 5, overlayCoords, -1, null, horseRenderState.outlineColor);
 			return;
 		}
 
-		submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, Constants.shadowMountColour, null, horseRenderState.outlineColor, null);
+		submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, Constants.shadowMountColour, null, horseRenderState.outlineColor);
 	}
 	@SuppressWarnings({"unchecked", "rawtypes"})
 	public static void renderLayerDarkerToBuffer(EntityModel<?> entityModel, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, int packedLight, int overlayCoords, RenderType renderType, HorseRenderState horseRenderState) {
 		if (ConfigHandler.darkenHorseTexture) {
-			submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, Constants.shadowMountMarkingsColour, null, horseRenderState.outlineColor, null);
+			submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, Constants.shadowMountMarkingsColour, null, horseRenderState.outlineColor);
 			return;
 		}
-		submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, -1, null, horseRenderState.outlineColor, null);
+		submitNodeCollector.submitModel((EntityModel)entityModel, horseRenderState, poseStack, renderType, packedLight, overlayCoords, -1, null, horseRenderState.outlineColor);
 	}
 
 	public static void renderTrailingParticles(AbstractHorse abstractHorse, @Nullable Player player) {
